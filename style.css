@@ -17,7 +17,7 @@ body{
     display: flex;
     align-items: center;
     column-gap: 60%;
-    height: 50px;
+    height: 70px;
     padding: 5px;
 }
 .head-container button{
