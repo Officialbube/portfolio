@@ -36,7 +36,8 @@ body{
     height: 500px;
 }
 .section-1 h1{
-    font-size: 60px;
+    font-size: 80px;
+    line-height: 100px;
 }
 .section-1 p{
     border: 1px solid white;
