@@ -4,17 +4,25 @@
   margin: 0;
   
 }
+html{
+  position: relative;
+  scroll-behavior: smooth;
+}
 body {
   background-color: #fcfcfc;
-  color: white;
+  color: #1a1a1a;
+  margin: 8px;
 }
 header {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(252, 252, 252, .5);
+  color: #1a1a1a;
   padding: 14px 0px;
   width: 100vw;
+  backdrop-filter: blur(8px) saturate(180%);
 }
 .head-container {
   border: 1px solid black;
@@ -28,6 +36,13 @@ header {
 p{
     line-height: 1.5;
     margin: 0px;
+    font-size: 1.125rem;
+    color: #1a1a1a;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .greetings {
   margin-bottom: 2rem;
@@ -37,6 +52,17 @@ p{
 }
 b{
     color: #1a1a1a;
+}
+section{
+  padding: 5rem 0;
+  display: block;
+}
+.container{
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.hero-left{
+  max-width: 100%;
 }
 .hero {
   padding: 5rem 0;
@@ -50,7 +76,27 @@ b{
     color: transparent;
     -webkit-text-stroke: 0.125rem #1a1a1a;
 }
-
+.sub-hero-title{
+  margin-top: 2rem;
+}
+.hero-right{
+  opacity: .8px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+ img{
+  display: block;
+  max-width: 100%;
+  margin-top: -7rem;
+  border-radius: 0.25rem;
+}
+.quote{
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #4d4d4d;
+}
 @media only screen and (max-width: 480px) {
     html{
         font-size: 14px;
