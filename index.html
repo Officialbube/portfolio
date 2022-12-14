@@ -6,24 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/075019fa93.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="head-container">
-            <p class="logo"><span class="b">B</span>UBE</p>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span class="colored"></span>
+    <header id="header">
+        <div class="menu-header">
+            <div class="head-container">
+                <p id="logo" class="logo"><span class="b">B</span>UBE</p>
+                <div class="menu-btn">
+                    <span id="menuText" class="menu-text">MENU</span>
+                    <span id="close" class="menu-close menu-text">CLOSE</span>
+                    <div id="hamburger" class="hamburger" onclick="clicked()">
+                    <span></span>
+                    <span></span>
+                    <span class="colored"></span>
+                </div>
+                </div>
+                
             </div>
         </div>
     </header>
     <main>
+        <section id="menu" class=" menu open">
+            <div class="container">
+                <div class="menu-right"></div>
+                <div class="menu-left">
+                    <a href="" class="nav-link active" >HOME</a>
+                    <a href="" class="nav-link">PROJECTS</a>
+                    <a href="" class="nav-link">ABOUT</a>
+                    <a href="" class="nav-link">CONTACT</a>
+                </div>
+            </div>
+        </section>
         <section class="hero">
             <div class="container">
                 <div class="hero-left">
-                    <p class="greetings">Hi, I,m <b>Ebube Nkere</b></p>
-                    <h2 class="hero-title">Frontend Developer</h2>
+                    <p class="greetings">Hi! I'm <b>Ebube Nkere</b></p>
+                    <h2 class="hero-title">Frontend Developer;</h2>
                     <p class="sub-hero-text">I'm a Software Engineer currently based in Nigeria with a year of experience in bringing solutions to digital products</p>
                 </div>
                 <div class="hero-right">
@@ -47,7 +66,7 @@
             <div class="container">
                 <div class="line"></div>
                 <h2 class="section-title">
-                    Get in <br> touch
+                    Get in <br> touch!
                 </h2>
                 <div class="footer-text">
                     <p>ghdcghcvgdcv vc b c c</p>
@@ -66,5 +85,6 @@
             </div>
         </section>
     </footer>
+    <script src="/index.js"></script>
 </body>
 </html>

@@ -25,6 +25,99 @@ header {
   padding: 14px 0px;
   width: 100vw;
   backdrop-filter: blur(8px) saturate(180%);
+  z-index: 1;
+}
+.nav-header{
+  background-color: purple;
+  
+}
+
+.open{
+  display: flex;
+  
+}
+
+.menu{
+  align-items: center;
+  justify-content: center;
+  
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #fcfcfc;
+  transition: 0.3s ease;
+}
+.menu-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.menu-text{
+  color: purple;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  display: none;
+}
+.menu-text:hover{
+  display: block;
+}
+.menu-close{
+  display: none;
+}
+.close{
+  display: none;
+}
+.show{
+  color: #fcfcfc;
+  display: block;
+}
+.menu .container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu-right{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: purple;
+  transition: 0.3s ease;
+  
+}
+.menu{
+  display: none;
+}
+.menu-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.nav-link{
+  font-size: 5rem;
+  color: transparent;
+  font-weight: 800;
+  -webkit-text-stroke: 0.125rem #fcfcfc;
+  margin-right: 1rem;
+  position: relative;
+  line-height: 100%;
+  margin-top: 1rem;
+  letter-spacing: 4px;
+  display: inline;
+  width: auto;
+  
+}
+.nav-link:hover{
+  color: #fcfcfc;
+}
+.nav-link.active{
+  color: #fcfcfc;
 }
 .head-container {
   
@@ -42,12 +135,22 @@ header {
 .logo .b{
   color: purple;
 }
+.logo-change{
+  color: #fcfcfc;
+}
+.logo-change .b{
+  color: #fcfcfc;
+}
 .hamburger{
   display: flex;
+  position: relative;
+  padding: 8px 0px;
   flex-direction: column;
   row-gap: 5px;
   cursor: pointer;
   align-items: flex-end;
+  z-index: 1;
+  width: 2.5rem;
 }
 .hamburger span{
   background-color:#1a1a1a;
@@ -55,10 +158,25 @@ header {
   width: 40px;
   border-radius: 0.125rem;
 }
-.hamburger .colored{
+.change .colored{
   background-color: purple;
   width: 1.5rem;
   
+}
+.change {
+  display: flex;
+}
+.change span{
+  background-color: #fcfcfc;
+}
+.change span:nth-child(1){
+  transform: translateY(4px) rotate(45deg);
+}
+.change span:nth-child(2){
+  transform: translateY(-6px) rotate(-45deg);
+}
+.change span:nth-child(3){
+  opacity: 0;
 }
 p{
     line-height: 1.5;
@@ -148,8 +266,8 @@ h2{
   margin-bottom: 3rem;
 }
 .button{
-  position: relative;
-  border: 1px solid purple;
+  
+  border: 1px solid #800080;
   height: 4em;
   width: max-content;
   padding: 0 2em;
@@ -163,6 +281,8 @@ h2{
   cursor: pointer;
 
 }
+
+
 .footer-end{
   display: flex;
   justify-content: space-between;
@@ -173,7 +293,7 @@ a{
   text-decoration: none;
 }
 .link{
-  position: relative;
+  
   margin-right: 1rem;
   font-weight: 800;
   font-size: 1.25rem;
