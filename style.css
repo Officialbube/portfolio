@@ -39,16 +39,26 @@ header {
   font-weight: 800;
   cursor: pointer;
 }
+.logo .b{
+  color: purple;
+}
 .hamburger{
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   cursor: pointer;
+  align-items: flex-end;
 }
 .hamburger span{
-  background-color: black;
+  background-color:#1a1a1a;
   height: 5px;
   width: 40px;
+  border-radius: 0.125rem;
+}
+.hamburger .colored{
+  background-color: purple;
+  width: 1.5rem;
+  
 }
 p{
     line-height: 1.5;
