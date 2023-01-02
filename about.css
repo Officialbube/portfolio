@@ -207,3 +207,39 @@ a {
   align-items: center;
   font-size: 1rem;
 }
+.timeline{
+  list-style: none;
+  max-width: 600px;
+}
+ul, li{
+  list-style: none;
+}
+.timeline-item{
+  padding: 0 0 1rem 1rem;
+}
+.timeline-item h3{
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+.timeline-item h4{
+  display: inline;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #1a1a1a;
+}
+.timeline-item h4 span{
+  color: #808080;
+}
+.timeline .time-span{
+  display: block;
+  font-size: 0.875rem;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+}
+.timeline p{
+  display: block;
+  color: #808080;
+  font-size: 0.875rem;
+}
