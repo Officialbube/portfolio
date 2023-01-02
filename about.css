@@ -94,6 +94,24 @@ p {
   margin: 2rem 0 0;
   align-items: center;
 }
+.btn-container .button {
+  width: 100%;
+}
+.button{
+  display: flex;
+  align-items: center;
+  height: 4em;
+  padding: 0 2em;
+  border: 1px solid purple;
+  box-shadow: 0 10px 50px rgb(0 0 0 / 10%);
+  border-radius: 0.25em;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
 .recepies {
   padding-bottom: 5rem;
 }
