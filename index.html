@@ -11,11 +11,10 @@
 <body>
     <header id="header">
         <div class="menu-header">
-            <div class="head-container">
+            <div class="container">
                 <p id="logo" class="logo"><span class="b">B</span>UBE</p>
                 <div class="menu-btn">
                     <span id="menuText" class="menu-text">MENU</span>
-                    <span id="close" class="menu-close menu-text">CLOSE</span>
                     <div id="hamburger" class="hamburger" onclick="clicked()">
                         <span></span>
                         <span></span>
@@ -27,17 +26,17 @@
         </div>
     </header>
     <main>
-        <section id="menu" class=" menu open">
+        <nav id="menu">
             <div class="container">
                 <div class="menu-right"></div>
                 <div class="menu-left">
-                    <a href="" class="nav-link active" >HOME</a>
-                    <a href="" class="nav-link">PROJECTS</a>
-                    <a href="" class="nav-link">ABOUT</a>
-                    <a href="" class="nav-link">CONTACT</a>
+                    <a href="" class="link-outline nav-link active" >HOME</a>
+                    <a href="" class="link-outline nav-link">PROJECTS</a>
+                    <a href="" class="link-outline nav-link">ABOUT</a>
+                    <a href="" class="link-outline nav-link">CONTACT</a>
                 </div>
             </div>
-        </section>
+        </nav>
         <section class="hero">
             <div class="container">
                 <div class="hero-left">
@@ -57,17 +56,13 @@
         </section>
         <section class="project">
             <div class="container">
-                <h2>Projects</h2>
-            </div>
-            <div class="container">
-                <p>These are some projects that I've worked on</p>
-            </div>
-            <section class="sub-section container">
+                <h2 class="sub-title">Projects</h2>
+            
                 <div class="card-container">
                     <div class="card">
-                        <div class="card-img">
+                        <div class="card-img-container">
                             <a href="">
-                                <img src="/assets/images/Annotation 2022-12-30 124608.jpg"  alt="">
+                                <img class="card-img" src="/assets/images/Annotation 2022-12-30 124608.jpg"  alt="">
                             </a>
                         </div>
                         <div class="card-footer">
@@ -77,8 +72,11 @@
                             </div>
                         </div>
                     </div>
+                    <button class="button project-button">
+                        See more projects
+                    </button>
                 </div>
-            </section>
+            </div>
 
         </section>
     </main>
@@ -104,7 +102,7 @@
                         <a href="https://github.com/Officialbube" class="link">Github</a>
                         <a href="https://twitter.com/BubeCodes" class="link">Twitter</a>
                     </div>
-                    <div>Copyright &#169 2022, Ebube Nkere</div>
+                    <div>Copyright &#169 2023, Ebube Nkere</div>
                 </div>
             </div>
         </section>
