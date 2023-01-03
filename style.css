@@ -41,7 +41,7 @@ header .container{
 }
 
 #menu{
-  display: ;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: #800080;
