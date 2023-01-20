@@ -20,7 +20,7 @@
     backdrop-filter: blur(8px) saturate(180%);
     z-index: 1;
   }
-  header .head-container{
+  header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;

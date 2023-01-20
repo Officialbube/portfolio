@@ -47,7 +47,7 @@ header .container{
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 100px;
+  
   color: #fcfcfc;
   transition: 0.3s ease-out;
   z-index: 1;
@@ -163,7 +163,7 @@ header .container{
   z-index: 2;
   width: 2.5rem;
 }
-.burger1, .burger2{
+.burger1, .burger2, .burger3{
   background-color:#1a1a1a;
   min-height: 4px;
   width: 100%;
@@ -177,7 +177,7 @@ header .container{
   width: 40px;
   border-radius: 0.125rem;
 }*/
-.hamburger span:nth-child(3){
+.burger3{
   background-color: purple;
   
   width: 1.5rem;
@@ -390,16 +390,30 @@ a{
     body{
     padding-top: 4rem;
     }
+    .menu-container{
+      margin-right: 2rem;
+    }
+    .menu-left a{
+      margin-right: 2rem;
+    }
     
     .greetings {
     font-size: 1.625rem;
     
+  }
+  .hero-container{
+    display: flex;
+    flex-direction: column;
   }
   .hero-title{
     font-size: 4rem;
   }
   .hero-right{
     margin-top: 5rem;
+  }
+  .hero-right img{
+    height: 100%;
+    width: 100%;
   }
   .section-title{
     font-size: 3.75rem;
