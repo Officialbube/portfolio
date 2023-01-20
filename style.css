@@ -393,8 +393,9 @@ a{
     .menu-container{
       margin-right: 2rem;
     }
-    .menu-left a{
+    .nav-link{
       margin-right: 2rem;
+      font-size: 3rem;
     }
     
     .greetings {
