@@ -165,9 +165,9 @@ header .container{
 }
 .burger1, .burger2, .burger3{
   background-color:#1a1a1a;
-  min-height: 4px;
+  min-height: 2px;
   width: 100%;
-  margin: 2px 0px;
+  margin: 1px 0px;
   border-radius: 0.125rem;
   transition: .3s ease-in-out;
 }
@@ -431,10 +431,22 @@ a{
   }
 }
 @media only screen and (max-width: 768px){
-
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-right{
+    height: 400px;
+    max-width: 400px;
+  }
 }
 @media only screen and (max-width: 930px){
-
+  .hero-container{
+    column-gap: 5rem;
+  }
+  .hero-right{
+    margin-top: 5rem;
+  }
 }
 @keyframes show-nav{
 0%{
